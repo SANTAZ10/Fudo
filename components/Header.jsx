@@ -5,8 +5,9 @@ import { UilReceipt, UilShoppingBag } from "@iconscout/react-unicons";
 import { useStore } from "../store/store";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import React from 'react'
 
-export default (Header) => {
+const Header = () => {
   const [order, setOrder] = useState("");
 
   useEffect(() => {
@@ -50,4 +51,6 @@ export default (Header) => {
       </div>
     </div>
   );
-};
+}
+
+export default Header
