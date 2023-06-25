@@ -7,7 +7,7 @@ import { useState } from "react";
 import OrderModal from "../components/OrderModal";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/router";
-const cart = () => {
+const Cart = () => {
   const cartData = useStore((state) => state.cart);
   const [order, setOrder] = useState(
     typeof window !== "undefined" && localStorage.getItem('order')
@@ -127,4 +127,4 @@ const cart = () => {
   );
 };
 
-export default cart;
+export default Cart;
